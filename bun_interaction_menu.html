@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Bunny | Interaction Menu</title>
+
+    <link rel="icon" type="image/png" href="img/fav.jpeg">
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Premium Minimalist Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="conf.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="antialiased selection:bg-lavender selection:text-plum">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-cream/80 border-b border-lavender/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center relative z-20">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="img/logo_bunny.png" alt="Logo" width="80">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-purple transition-colors">Home</a>
+                <!-- <a href="#" class="hover:text-purple transition-colors">Services</a> -->
+
+                <!-- About Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">About <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="about.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About Us</a>
+                        <a href="about_environment.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Environment</a>
+                        <a href="about_the_owner.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Owner</a>
+                    </div>
+                </div>
+
+                <!-- Club Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Club <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-64 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="rules.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">The Rules</a>
+                        <a href="lakeview_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Lakeview Buns</a>
+                        <a href="schaumburg_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Schaumburg Buns</a>
+                        <a href="#" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Bun Interaction Menu</a>
+                        <a href="private_events.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Private Events</a>
+                    </div>
+                </div>
+
+                <!-- Care Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Care <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="boarded_bunny_care.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarded Bunny Care</a>
+                        <a href="boarding_pricing.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarding Service Prices</a>
+                    </div>
+                </div>
+
+
+                <!-- Locations Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Locations <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="lakeview_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Lakeview</a>
+                        <a href="schaumburg_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Schaumburg</a>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Call Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-purple text-white font-medium text-sm btn-primary">
+                       Call to Inquire
+                    </button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="tel:+17736879253" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Lakeview</a>
+                        <a href="tel:+1708710096" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Schaumburg</a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-plum text-3xl p-2 -mr-2 relative z-[60]">
+                    <i class="ph ph-list transition-transform duration-300"></i>
+                </button>
+        </div>
+    </nav>
+
+    <!-- Full-Screen Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-cream/95 backdrop-blur-xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col pt-28 px-6 overflow-y-auto pb-10">
+        <div class="max-w-md mx-auto w-full space-y-8">
+            <!-- Mobile Home -->
+            <div>
+                <a href="index.html" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Home</a>
+            </div>
+
+            <!-- Mobile Services -->
+           <!-- <div>
+                <a href="#" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Services</a>
+            </div> -->
+
+            <!-- Mobile Locations -->
+
+            <!-- Mobile About -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">About</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="about.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About Us</a>
+                    <a href="about_environment.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Environment</a>
+                    <a href="about_the_owner.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Owner</a>
+                </div>
+            </div>
+
+            <!-- Mobile Club -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Club</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="rules.html" class="text-lg text-plum/80 hover:text-purple transition-colors">The Rules</a>
+                    <a href="lakeview_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Lakeview Buns</a>
+                    <a href="schaumburg_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Schaumburg Buns</a>
+                    <a href="#" class="text-lg text-plum/80 hover:text-purple transition-colors">Bun Interaction Menu</a>
+                    <a href="private_events.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Private Events</a>
+                </div>
+            </div>
+
+            <!-- Mobile Care -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Care</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="boarded_bunny_care.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarded Bunny Care</a>
+                    <a href="boarding_pricing.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarding Service Prices</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Locations</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="lakeview_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Chicago</a>
+                    <a href="schaumburg_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Schaumburg</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Call to Inquire</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="tel:+17736879253" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Lakeview</a>
+                    <a href="tel:+1708710096" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Schaumburg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Interaction Menu Section -->
+    <section id="interaction-menu" class="py-24 px-6 bg-cream/50">
+        <div class="max-w-7xl mx-auto mt-14 md:pt-10">
+            <!-- Header & Intro -->
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-purple font-semibold tracking-widest uppercase text-sm mb-3 block">The Experience</span>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-6 text-plum">What exactly does a bunny interaction entail?</h2>
+                <p class="text-plum/80 leading-relaxed text-lg font-light">
+                    Everyone must wash hands upon arrival. Visitors are provided a fluffy pillow and a sprig of cilantro in each enclosure to feed the bunnies. We wish we could give more cilantro, but they would have upset tummies by the end of the day! 15-20 minutes is spent in each enclosure with either a solo or bonded pair of buns.
+                </p>
+            </div>
+
+            <!-- Pricing Header -->
+            <div class="mb-12 text-center reveal reveal-delay-1">
+                <h3 class="font-serif text-3xl text-plum mb-3">Rabbit Interaction Menu</h3>
+                <p class="text-sm text-plum/60 uppercase tracking-widest mb-4 font-semibold">Effective 6-1-24</p>
+                <div class="inline-flex flex-col sm:flex-row items-center gap-3 bg-white px-6 py-3 rounded-full shadow-sm border border-lavender/30 text-sm text-plum/80">
+                    <span class="flex items-center gap-2"><i class="ph-fill ph-clock text-purple"></i> Daily 10am-8pm (Closed 1-3pm)</span>
+                    <span class="hidden sm:block text-lavender">|</span>
+                    <span class="flex items-center gap-2 font-medium"><i class="ph-fill ph-warning-circle text-purple"></i> Reservations STRONGLY recommended!</span>
+                </div>
+                <p class="text-xs text-plum/50 italic mt-3">*Schaumburg hrs vary</p>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12 reveal reveal-delay-2">
+                <!-- Weekday -->
+                <div class="bg-white rounded-[2rem] p-8 shadow-soft border border-lavender/20 text-center relative overflow-hidden group hover:shadow-hover transition-all duration-300 hover:-translate-y-2">
+                    <h4 class="font-serif text-2xl text-plum mb-2">Weekday</h4>
+                    <p class="text-xs text-plum/50 mb-6 uppercase tracking-widest font-semibold">Mon - Thur</p>
+                    <div class="flex justify-center items-baseline mb-4 text-plum">
+                        <span class="text-5xl font-serif font-semibold">$15</span>
+                    </div>
+                    <p class="text-sm text-plum/80 bg-cream/50 py-2 rounded-xl">Per person / hour</p>
+                </div>
+
+                <!-- Weekend -->
+                <div class="bg-white rounded-[2rem] p-8 shadow-soft border border-lavender/20 text-center relative overflow-hidden group hover:shadow-hover transition-all duration-300 hover:-translate-y-2">
+                    <h4 class="font-serif text-2xl text-plum mb-2">Weekend</h4>
+                    <p class="text-xs text-plum/50 mb-6 uppercase tracking-widest font-semibold">Fri - Sun</p>
+                    <div class="flex justify-center items-baseline mb-4 text-plum">
+                        <span class="text-5xl font-serif font-semibold">$20</span>
+                    </div>
+                    <p class="text-sm text-plum/80 bg-cream/50 py-2 rounded-xl">Per person / hour</p>
+                </div>
+
+                <!-- Membership (Spans rows on large screens) -->
+                <div class="bg-plum text-cream rounded-[2rem] p-8 shadow-hover text-center relative overflow-hidden group hover:-translate-y-2 transition-all duration-300 md:col-span-3 lg:col-span-1 lg:row-span-2 flex flex-col">
+                    <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4 group-hover:rotate-12 transition-transform duration-700">
+                        <i class="ph-fill ph-star text-[12rem] text-lavender"></i>
+                    </div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-cream mb-6 mx-auto">
+                            <i class="ph-fill ph-crown text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-2xl mb-1 text-white">Monthly Membership</h4>
+                        <p class="text-sm text-cream/60 uppercase tracking-widest mb-6 font-semibold">30-Day Pass</p>
+                        
+                        <div class="flex justify-center items-baseline mb-6">
+                            <span class="text-6xl font-serif font-semibold text-white">$45</span>
+                        </div>
+                        
+                        <p class="text-sm text-cream/90 leading-relaxed mb-8 font-light flex-grow">
+                            Unlimited visits for 30 days from the date of first interaction. Membership is per person and is non-transferrable.
+                        </p>
+                        
+                        <ul class="text-xs text-cream/80 text-left space-y-3 bg-white/5 p-5 rounded-2xl border border-white/10">
+                            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-lavender mt-0.5"></i> Limited to one interaction per day.</li>
+                            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-lavender mt-0.5"></i> Must adhere to the 24-hour cancellation policy or membership may be terminated.</li>
+                            <li class="flex items-start gap-2"><i class="ph-bold ph-check text-lavender mt-0.5"></i> Book by choosing "Membership" through the online portal.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Student Discount -->
+                <div class="bg-lavender/10 rounded-[2rem] p-6 lg:p-8 shadow-soft border border-lavender/30 flex flex-col sm:flex-row items-center sm:items-start gap-6 md:col-span-2 group hover:bg-lavender/20 transition-colors duration-300">
+                    <div class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-purple text-3xl shrink-0 shadow-sm border border-lavender/20 group-hover:rotate-12 transition-transform">
+                        <i class="ph-fill ph-student"></i>
+                    </div>
+                    <div class="text-center sm:text-left">
+                        <h4 class="font-serif text-2xl text-plum mb-2">College Students</h4>
+                        <p class="text-plum/80 text-sm mb-4 leading-relaxed">Present a valid student ID to receive a <strong>25% discount</strong> on your interaction.</p>
+                        <div class="flex flex-wrap justify-center sm:justify-start gap-3 text-sm font-medium text-plum">
+                            <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-lavender/20 flex items-center gap-1"><i class="ph-fill ph-tag text-purple"></i> $12 Weekday</span>
+                            <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-lavender/20 flex items-center gap-1"><i class="ph-fill ph-tag text-purple"></i> $15 Weekend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Refund Note -->
+            <div class="bg-white border-l-4 border-purple p-6 lg:p-8 rounded-r-3xl rounded-l-md shadow-soft max-w-4xl mx-auto reveal reveal-delay-2 flex flex-col sm:flex-row items-start gap-6">
+                <div class="w-12 h-12 rounded-full bg-purple/10 flex items-center justify-center text-purple text-2xl shrink-0">
+                    <i class="ph-fill ph-info"></i>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-plum mb-3">Special Note On Refunds</h4>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light">
+                        Please know that we require at least <strong>24 hours notice</strong> of cancellation in order to issue a full refund. If you need to cancel for ANY reason with less than 24 hours notice, consider your payment to be a donation to help with the care required to keep our sweet bunnies healthy. <span class="block mt-2 italic text-purple font-medium">Exotic veterinary care is very expensive!</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+   
+    <!-- Final CTA / Footer -->
+    <footer class="bg-plum pt-24 pb-12 px-6 text-cream relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, #faf7f2 0%, transparent 50%);"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- CTA Area -->
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-serif text-4xl lg:text-6xl mb-6 text-white tracking-tight">Ready to Step Into Peace?</h2>
+                <p class="text-cream/70 text-lg mb-10">Whether you seek an afternoon of quiet connection or the finest care for your companion, we are ready to welcome you.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://www.pawsadmin.com/api/booking/portal/bookingIndex.html?key=ZGN65QSOKA" target="_blank" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center hover:bg-[#8e66d4] transition-colors duration-300 shadow-lg">
+                       Book Boarding & Grooming Now
+                    </a>
+                    <button class="open-modal-btn px-8 py-4 rounded-full border border-lavender/30 text-white font-medium text-center hover:bg-white/10 transition-colors duration-300">
+                       Reserve Bun Interaction Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-lavender/20 pt-16 mb-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 text-white">
+                        <span class="font-serif text-2xl font-semibold tracking-tight">Cuddle Bunny</span>
+                    </a>
+                    <p class="text-sm text-cream/60 leading-relaxed">A sanctuary for wellness, impeccable animal care, and quiet reflection. Where wellness meets whiskers.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Visit Us</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li>2901 N Clark St, Chicago, IL <br> 60657, United States</li>
+                        <li><a href="tel:+17736879253" class="hover:text-white transition-colors">(773) 687 9253</a></li>
+                        <li><a href="mailto:cuddlebunnyinfo@gmail.com" class="hover:text-white transition-colors">CuddleBunnyInfo@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li class="flex justify-between"><span>Mon - Tue</span> <span>10am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Wed</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Fri - Sun</span> <span>10am - 8pm</span></li>
+                        <li class="text-xs text-lavender italic mt-2">*CLOSED DAILY 1 - 3:00pm for bunny naptime</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cuddlebunnyccc/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/cuddlebunnyccc" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-facebook-logo text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-lavender/20 pt-8 text-xs text-cream/40">
+                <p>&copy; <span id="current-year"></span> Cuddle Bunny. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cream/80 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Boarding Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal Overlay -->
+    <div id="reservation-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-plum/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="modal-backdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-cream p-8 md:p-12 rounded-[2rem] shadow-2xl w-full max-w-lg transform scale-95 opacity-0 transition-all duration-300 border border-lavender/30" id="modal-content">
+            <button id="close-modal" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white flex items-center justify-center text-plum/60 hover:text-plum hover:bg-lavender/20 transition-all shadow-sm">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mx-auto mb-4">
+                    <i class="ph-fill ph-map-pin"></i>
+                </div>
+                <h3 class="font-serif text-3xl text-plum mb-2">Select Location</h3>
+                <p class="text-plum/70 font-light">Where would you like to experience Cuddle Bunny?</p>
+            </div>
+            
+            <div class="space-y-4">
+                <a href="https://www.bookeo.com/cuddlebunnyccc" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Chicago Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Lakeview Sanctuary</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+                <a href="http://bookeo.com/CuddleBunnyToo" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Schaumburg Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Suburban Retreat</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

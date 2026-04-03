@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Bunny | Boarding Info</title>
+
+    <link rel="icon" type="image/png" href="img/fav.jpeg">
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Premium Minimalist Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="conf.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="antialiased selection:bg-lavender selection:text-plum">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-cream/80 border-b border-lavender/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center relative z-20">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="img/logo_bunny.png" alt="Logo" width="80">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-purple transition-colors">Home</a>
+                <!-- <a href="#" class="hover:text-purple transition-colors">Services</a> -->
+
+                <!-- About Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">About <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="about.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About Us</a>
+                        <a href="about_environment.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Environment</a>
+                        <a href="about_the_owner.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Owner</a>
+                    </div>
+                </div>
+
+                <!-- Club Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Club <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-64 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="rules.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">The Rules</a>
+                        <a href="lakeview_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Lakeview Buns</a>
+                        <a href="schaumburg_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Schaumburg Buns</a>
+                        <a href="bun_interaction_menu.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Bun Interaction Menu</a>
+                        <a href="private_events.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Private Events</a>
+                    </div>
+                </div>
+
+                <!-- Care Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Care <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="#" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarded Bunny Care</a>
+                        <a href="boarding_pricing.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarding Service Prices</a>
+                    </div>
+                </div>
+
+
+                <!-- Locations Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Locations <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="lakeview_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Lakeview</a>
+                        <a href="schaumburg_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Schaumburg</a>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Call Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-purple text-white font-medium text-sm btn-primary">
+                       Call to Inquire
+                    </button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="tel:+17736879253" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Lakeview</a>
+                        <a href="tel:+1708710096" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Schaumburg</a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-plum text-3xl p-2 -mr-2 relative z-[60]">
+                    <i class="ph ph-list transition-transform duration-300"></i>
+                </button>
+        </div>
+    </nav>
+
+    <!-- Full-Screen Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-cream/95 backdrop-blur-xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col pt-28 px-6 overflow-y-auto pb-10">
+        <div class="max-w-md mx-auto w-full space-y-8">
+            <!-- Mobile Home -->
+            <div>
+                <a href="index.html" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Home</a>
+            </div>
+
+            <!-- Mobile Services -->
+           <!-- <div>
+                <a href="#" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Services</a>
+            </div> -->
+
+            <!-- Mobile Locations -->
+
+            <!-- Mobile About -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">About</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="about.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About Us</a>
+                    <a href="about_environment.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Environment</a>
+                    <a href="about_the_owner.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Owner</a>
+                </div>
+            </div>
+
+            <!-- Mobile Club -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Club</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="rules.html" class="text-lg text-plum/80 hover:text-purple transition-colors">The Rules</a>
+                    <a href="lakeview_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Lakeview Buns</a>
+                    <a href="schaumburg_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Schaumburg Buns</a>
+                    <a href="bun_interaction_menu.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Bun Interaction Menu</a>
+                    <a href="private_events.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Private Events</a>
+                </div>
+            </div>
+
+            <!-- Mobile Care -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Care</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="#" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarded Bunny Care</a>
+                    <a href="boarding_pricing.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarding Service Prices</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Locations</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="lakeview_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Chicago</a>
+                    <a href="schaumburg_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Schaumburg</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Call to Inquire</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="tel:+17736879253" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Lakeview</a>
+                    <a href="tel:+1708710096" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Schaumburg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Important Boarding Info Section -->
+    <section id="boarding-info" class="py-24 px-6 bg-cream/50 border-t border-lavender/20">
+        <div class="max-w-7xl mx-auto mt-14 md:pt-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-purple font-semibold tracking-widest uppercase text-sm mb-3 block">Before You Stay</span>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-6 text-plum">Important Boarding Info</h2>
+                <p class="text-plum/80 leading-relaxed text-lg font-light">
+                    We ensure a meticulous, luxurious, and safe environment for every bunny in our care. Here is everything you need to know about our boarding routines and accommodations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Accommodations -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal group hover:-translate-y-2 transition-all duration-700">
+                    <div class="text-purple mb-4"><i class="ph-fill ph-house-line text-4xl"></i></div>
+                    <h3 class="font-serif text-2xl text-plum mb-3">Accommodations & Comfort</h3>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light mb-4">
+                        Single boarded bunnies will be in a carpeted 2’ x 6’ exercise pen and bonded pairs (upon request) will be in a 4’ x 6’ carpeted exercise pen. We will provide a litter pan, ceramic water & food bowls, greens (organic romaine, cilantro, flat parsley, spring mix, and baby bok choy), and often a cardboard hidey box. <i class="text-plum/60 text-xs">Let us know if you do not want cardboard provided.</i>
+                    </p>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light">
+                        Pet parents are asked to bring items of their choice that have their bunny’s scent (toys, bowls, blankets, small tunnels) to help them adjust. Please be sure these items are not so large that they take up the entire ex-pen!
+                    </p>
+                </div>
+
+                <!-- Diet & Hydration -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal reveal-delay-1 group hover:-translate-y-2 transition-all duration-700">
+                    <div class="text-purple mb-4"><i class="ph-fill ph-drop text-4xl"></i></div>
+                    <h3 class="font-serif text-2xl text-plum mb-3">Diet & Hydration</h3>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light mb-4">
+                        We stock Oxbow adult & young bunny pellets that are provided at no extra charge. Because a sudden switch in pellets can cause tummy upset, we ask pet parents to bring in a supply of pellets to last the length of their bunny’s stay if they eat any other brand.
+                    </p>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light">
+                        The bunnies are given room temperature Brita filtered water. If your bunny requires distilled water for medical reasons, please let us know and we are happy to provide that as well.
+                    </p>
+                </div>
+
+                <!-- Monitoring & Updates -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal group hover:-translate-y-2 transition-all duration-700">
+                    <div class="text-purple mb-4"><i class="ph-fill ph-clipboard-text text-4xl"></i></div>
+                    <h3 class="font-serif text-2xl text-plum mb-3">Monitoring & Updates</h3>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light mb-4">
+                        Each enclosure has a care sheet clipped to the side to help us track scheduled feedings, cleanings, requested nail trims, and medications. Food & water intake as well as fecal output is closely monitored.
+                    </p>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light">
+                        While we cannot promise daily updates, we will do our best to send several throughout your bunny’s stay (typically the day after arrival and every couple of days thereafter). If you are an anxious pet parent, let us know! We're happy to update you more frequently for your peace of mind.
+                    </p>
+                </div>
+
+                <!-- Safety & Evening Routine -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal reveal-delay-1 group hover:-translate-y-2 transition-all duration-700">
+                    <div class="text-purple mb-4"><i class="ph-fill ph-moon-stars text-4xl"></i></div>
+                    <h3 class="font-serif text-2xl text-plum mb-3">Safety & Routines</h3>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light mb-4">
+                        <strong class="font-medium text-plum">Boarded bunnies do NOT interact with our bunnies nor with other boarded bunnies,</strong> and are never brought upstairs. Music is played throughout the day to keep them entertained while staff members spend time interacting with them.
+                    </p>
+                    <p class="text-plum/80 text-sm leading-relaxed font-light">
+                        Each day before we depart, every bunny gets a small treat (blueberries, apple, dried cranberry, or a grape). We can easily substitute a digestive, urinary support, or papaya tablet if you prefer. As we turn off the lights, we routinely say, "Goodnight sweet bunnies!" Bunnies thrive on routines, and we want them to thrive.
+                    </p>
+                </div>
+
+                <!-- Schedule & Hours (Spans full width) -->
+                <div class="bg-plum text-cream rounded-[2rem] p-8 lg:p-10 shadow-soft border border-plum reveal md:col-span-2 group flex flex-col md:flex-row items-center gap-8 hover:-translate-y-2 transition-all duration-700">
+                    <div class="shrink-0 w-24 h-24 rounded-full bg-white/10 flex items-center justify-center text-white text-5xl">
+                        <i class="ph-fill ph-clock-countdown"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3">Schedule & Drop-offs</h3>
+                        <p class="text-cream/90 text-sm leading-relaxed font-light mb-3">
+                            Our day begins at 9am and ends around 9pm. <strong>Drop-off and pick-up is preferred between 10am-8pm</strong>, with the exception of Wednesdays when we are closed. Special arrangements need to be made outside of these standard times and on Wednesdays.
+                        </p>
+                        <p class="text-lavender text-xs font-medium italic border-t border-white/20 pt-3">
+                            *NOTE: We are closed on Thanksgiving, Christmas, and New Year's Days. Arrangements for pick-up need to be made either the day before or the day after these holidays.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 reveal">
+                <a href="boarding_pricing.html" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center hover:bg-[#8e66d4] transition-colors duration-300 shadow-lg">
+                    Boarding Services Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Final CTA / Footer -->
+    <footer class="bg-plum pt-24 pb-12 px-6 text-cream relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, #faf7f2 0%, transparent 50%);"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- CTA Area -->
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-serif text-4xl lg:text-6xl mb-6 text-white tracking-tight">Ready to Step Into Peace?</h2>
+                <p class="text-cream/70 text-lg mb-10">Whether you seek an afternoon of quiet connection or the finest care for your companion, we are ready to welcome you.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://www.pawsadmin.com/api/booking/portal/bookingIndex.html?key=ZGN65QSOKA" target="_blank" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center hover:bg-[#8e66d4] transition-colors duration-300 shadow-lg">
+                       Book Boarding & Grooming Now
+                    </a>
+                    <button class="open-modal-btn px-8 py-4 rounded-full border border-lavender/30 text-white font-medium text-center hover:bg-white/10 transition-colors duration-300">
+                       Reserve Bun Interaction Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-lavender/20 pt-16 mb-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 text-white">
+                        <span class="font-serif text-2xl font-semibold tracking-tight">Cuddle Bunny</span>
+                    </a>
+                    <p class="text-sm text-cream/60 leading-relaxed">A sanctuary for wellness, impeccable animal care, and quiet reflection. Where wellness meets whiskers.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Visit Us</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li>2901 N Clark St, Chicago, IL <br> 60657, United States</li>
+                        <li><a href="tel:+17736879253" class="hover:text-white transition-colors">(773) 687 9253</a></li>
+                        <li><a href="mailto:cuddlebunnyinfo@gmail.com" class="hover:text-white transition-colors">CuddleBunnyInfo@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li class="flex justify-between"><span>Mon - Tue</span> <span>10am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Wed</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Fri - Sun</span> <span>10am - 8pm</span></li>
+                        <li class="text-xs text-lavender italic mt-2">*CLOSED DAILY 1 - 3:00pm for bunny naptime</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cuddlebunnyccc/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/cuddlebunnyccc" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-facebook-logo text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-lavender/20 pt-8 text-xs text-cream/40">
+                <p>&copy; <span id="current-year"></span> Cuddle Bunny. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cream/80 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Boarding Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal Overlay -->
+    <div id="reservation-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-plum/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="modal-backdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-cream p-8 md:p-12 rounded-[2rem] shadow-2xl w-full max-w-lg transform scale-95 opacity-0 transition-all duration-300 border border-lavender/30" id="modal-content">
+            <button id="close-modal" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white flex items-center justify-center text-plum/60 hover:text-plum hover:bg-lavender/20 transition-all shadow-sm">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mx-auto mb-4">
+                    <i class="ph-fill ph-map-pin"></i>
+                </div>
+                <h3 class="font-serif text-3xl text-plum mb-2">Select Location</h3>
+                <p class="text-plum/70 font-light">Where would you like to experience Cuddle Bunny?</p>
+            </div>
+            
+            <div class="space-y-4">
+                <a href="https://www.bookeo.com/cuddlebunnyccc" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Chicago Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Lakeview Sanctuary</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+                <a href="http://bookeo.com/CuddleBunnyToo" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Schaumburg Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Suburban Retreat</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

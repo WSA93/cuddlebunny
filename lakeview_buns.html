@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Bunny | Lakeview Buns</title>
+
+    <link rel="icon" type="image/png" href="img/fav.jpeg">
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Premium Minimalist Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="conf.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="antialiased selection:bg-lavender selection:text-plum">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-cream/80 border-b border-lavender/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center relative z-20">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="img/logo_bunny.png" alt="Logo" width="80">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-purple transition-colors">Home</a>
+                <!-- <a href="#" class="hover:text-purple transition-colors">Services</a> -->
+
+                <!-- About Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">About <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="about.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About Us</a>
+                        <a href="about_environment.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Environment</a>
+                        <a href="about_the_owner.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Owner</a>
+                    </div>
+                </div>
+
+                <!-- Club Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Club <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-64 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="rules.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">The Rules</a>
+                        <a href="#" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Lakeview Buns</a>
+                        <a href="schaumburg_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Schaumburg Buns</a>
+                        <a href="bun_interaction_menu.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Bun Interaction Menu</a>
+                        <a href="private_events.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Private Events</a>
+                    </div>
+                </div>
+
+                <!-- Care Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Care <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="boarded_bunny_care.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarded Bunny Care</a>
+                        <a href="boarding_pricing.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarding Service Prices</a>
+                    </div>
+                </div>
+
+
+                <!-- Locations Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Locations <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="lakeview_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Lakeview</a>
+                        <a href="schaumburg_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Schaumburg</a>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Call Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-purple text-white font-medium text-sm btn-primary">
+                       Call to Inquire
+                    </button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="tel:+17736879253" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Lakeview</a>
+                        <a href="tel:+1708710096" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Schaumburg</a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-plum text-3xl p-2 -mr-2 relative z-[60]">
+                    <i class="ph ph-list transition-transform duration-300"></i>
+                </button>
+        </div>
+    </nav>
+
+    <!-- Full-Screen Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-cream/95 backdrop-blur-xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col pt-28 px-6 overflow-y-auto pb-10">
+        <div class="max-w-md mx-auto w-full space-y-8">
+            <!-- Mobile Home -->
+            <div>
+                <a href="index.html" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Home</a>
+            </div>
+
+            <!-- Mobile Services -->
+           <!-- <div>
+                <a href="#" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Services</a>
+            </div> -->
+
+            <!-- Mobile Locations -->
+
+            <!-- Mobile About -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">About</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="about.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About Us</a>
+                    <a href="about_environment.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Environment</a>
+                    <a href="about_the_owner.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Owner</a>
+                </div>
+            </div>
+
+            <!-- Mobile Club -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Club</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="rules.html" class="text-lg text-plum/80 hover:text-purple transition-colors">The Rules</a>
+                    <a href="#" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Lakeview Buns</a>
+                    <a href="schaumburg_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Schaumburg Buns</a>
+                    <a href="bun_interaction_menu.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Bun Interaction Menu</a>
+                    <a href="private_events.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Private Events</a>
+                </div>
+            </div>
+
+            <!-- Mobile Care -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Care</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="boarded_bunny_care.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarded Bunny Care</a>
+                    <a href="boarding_pricing.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarding Service Prices</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Locations</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="lakeview_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Chicago</a>
+                    <a href="schaumburg_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Schaumburg</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Call to Inquire</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="tel:+17736879253" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Lakeview</a>
+                    <a href="tel:+1708710096" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Schaumburg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!-- Meet Our Schaumburg Buns -->
+    <section id="schaumburg-buns" class="py-24 px-6 bg-white border-t border-lavender/20">
+        <div class="max-w-7xl mx-auto mt-14 md:pt-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-purple font-semibold tracking-widest uppercase text-sm mb-3 block">Resident Companions</span>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-6 text-plum">Meet Our Lakeview Buns</h2>
+                <div class="inline-flex items-center gap-2 bg-cream px-5 py-2.5 rounded-full shadow-sm border border-lavender/30 mb-6">
+                    <i class="ph-fill ph-map-pin text-purple"></i>
+                    <span class="text-sm font-medium text-plum/80">2901 N Clark St, Chicago, IL 60657, United States</span>
+                </div>
+                <p class="text-plum/80 leading-relaxed text-lg font-light">
+                    Meet the bunnies of Cuddle Bunny, our boarding facility and appointment-only interaction space. 
+                </p>
+            </div>
+
+            <!-- Buns Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Midnight & Amor -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/1.jpeg" alt="Two bonded bunnies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Bonded Pair</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Anna & Elsa</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Anna is half of our pair of Frozen sisters.  She is a black & white Dutch bunny who may be wide-eyed at first introduction, but quickly relaxes and flattens to the floor with a gently stroke to the tops of her shiny little black ears. The shape of a football upon arrival, her movement was very limited. After a healthy diet, she is now healthy and happy. The other half of our Frozen sisters, Elsa is a beautiful crisp, white Mini Rex with eyes as blue as the sky, pink inside her ears like cotton candy, and fur that feels like you're touching the air. When not nosily periscoping to see what's going on, she flops over sleeping soundly and snoring! She is by far our most vocal bunny.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brownie -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/2.jpeg" alt="Brown Holland Lop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Solo Bun</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Cashmere</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Although Cashmere (aka Cash) looks like a Siamese cat, we can assure you he is a Mini Rex bunny. In a softness competition, he has taken the prize. Cash absolutely loves treats and often climbs into visitors' laps for a crispy nibble.  He also loves neck pets. After a few scratches to the back of his neck, he flattens into a bunny puddle on the floor and will stay there as long as the scratches continue.  He just loves to be loved! 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Coco & Domino -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-2 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/3.jpeg" alt="Bonded bunny pair playing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Bonded Pair</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Fiona & Little Bear</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Fiona is a wide-eyed Agouti colored Netherland Dwarf with an adorable white heart outlining her nostrils. She enjoys being scratched between her tiny rounded ears so much that, if you stop scratching, she will nudge your hand until you resume. She is a speed demon and loves to race and binky about!  Lil Bear is a Holland Lop bunny and Fiona's bonded partner. He has a shiny, soft, medium length black coat and puffy gray feet. He is a mellow fellow and loyal husbun seldom seen away from her side. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- David & Goliath -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/4.jpeg" alt="Large Flemish Giant bunnies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Solo Bun</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Fraggle</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Fraggle, or Fraggle Floof as we like to call him, is an English Angora bunny who came to us matted from the tips of his ears to the tip of his tail. After much careful grooming, he has become a fluffy-eared, mutton-chopped beauty. With his gentle demeanor, unique appearance, and huge brown eyes, Fraggle has become a fan favorite.  He's not into cilantro, but will gently nibble a treat from your fingers tips. He was born on Valentine's Day and is the biggest sweetheart you'll ever meet!  Fun fact: Angoras are the sheep of the bunny world and must be regularly sheared.  Fraggle's fur is collected and donated to local fibre arts students to create yarn!  How cool is that?!?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Furbie -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/5.jpeg" alt="Fluffy Lionhead rabbit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Bonded Pair</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Jacques & Sweetie</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                             Jacques is a Champagne D'Argent bunny who was all black with a silver crescent moon on his side when he arrived. The silver slowly crept over his entire body leaving only his nose and eyes as dark as midnight. Sweetie arrived around the same time and they immediately became inseparable. It took some time for her to be named, so we started calling her Sweetie and it stuck because she is a total sweetie! While most Himalayan bunnies are black & white, Sweetie is a Lilac Himalayan due to the tan coloring of her ears, nose, paws and tail which is absolutely gorgeous coupled with her striking and expressive pink eyes. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lily & Petunia -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-2 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/6.jpeg" alt="Two shy bunnies resting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Bonded Pair</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Kirby & Waddle Dee</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Waddle Dee and Kirby are tan Mini Lops with black noses and ears. Although they look the same, they are not related. Waddle is the larger of the two and Kirby has white markings on his left ear, which is how we tell them apart. They are as clever and cute as they are curious. No matter what's happening, Kirby just wants to be involved and Waddle is not far behind. Kirby is the king of splooting and Waddle is his shy but sweet gal pal who loves pets--just don't pet her behind as she's a little quirky and does not appreciate that. Both will dash quickly to your side at the sight of some crispy cilantro. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lzzy & Marley -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/7.jpeg" alt="Lop mix rabbit with flopped ear" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Solo Bun</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Olaf</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Olaf is a solo bunny with a big personality who tends to love the other bunnies just a little too much for their liking. We're told his fur feels like powdered sugar or a cloud--you be the judge!  He has sparkling, beautiful, blue eyes that hint at the inner workings of his clever mind.  Olaf has been trained to give high-fives, spin in circles, and stand up.  He is highly food motivated and enjoys climbing into the laps of visitors for a snack. Or lay down and he will quickly hop onto your back for the best bunny massage ever!  
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Loki -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/8.jpeg" alt="Sweet Holland Lop rabbit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Solo Bun</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Pepe</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Pepe is a black and white spotted Holland Lop who steals the hearts of absolutely everyone he meets. He loves food, yes, but even more so adores attention. And if he feels he is being ignored, he may become adorably demanding, crawling into your lap or giving you a gentle nudge to remind you of his fluffy presence. A chunk of his right ear is missing thanks to an aggressive former partner, but we think this only adds to his roguish charm. He is named after Pepe LePew because of his amorous nature and he has never met another bunny or a human he did not like.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Peter -->
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-2 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/9.jpeg" alt="Mini Rex rabbit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Bonded Pair</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Rex & Lola</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Rexy is the boss bun and the OG of Cuddle Bunny. He is a chill strawberry blonde Continental Giant bunny weighing in at a hefty 13 lbs.  He explores the world with his nose and has been known to stand on his hind legs to reach a treat, showing off just how tall and majestic he truly is! Lola is our smallest bunny and is bonded with Rex.   While this tiny Netherland Dwarf-Lionhead mix looks like a devil with pointy black ears resembling horns and pink eyes, they are truly an angel. Lola is a supportive partner assisting Rex with his grooming as he ages. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-cream rounded-[2rem] overflow-hidden shadow-soft reveal reveal-delay-2 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 border border-lavender/20 flex flex-col">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="img/lakeview/10.jpeg" alt="Mini Rex rabbit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold tracking-wide text-plum uppercase shadow-sm">Solo Bun</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-serif text-2xl text-plum mb-3">Winston</h3>
+                        <p class="text-plum/80 text-sm leading-relaxed font-light flex-grow">
+                            Winston is a big, doofy Flemish Giant baby and the largest of the Cuddle Bunny bunnies weighing in at a whopping 15 lbs. His ears are so large it appears a strong wind could easily tip him over. Winston loves to run and binky, but doesn't get much air with all that weight behind him. But it's sure fun to watch! While an imposing figure, he is the gentlest of souls, just as his Auntie GG was (RIP beautiful girl). We have to laugh when visitors at times hesitate to interact with him due to his size.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Final CTA / Footer -->
+    <footer class="bg-plum pt-24 pb-12 px-6 text-cream relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, #faf7f2 0%, transparent 50%);"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- CTA Area -->
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-serif text-4xl lg:text-6xl mb-6 text-white tracking-tight">Ready to Step Into Peace?</h2>
+                <p class="text-cream/70 text-lg mb-10">Whether you seek an afternoon of quiet connection or the finest care for your companion, we are ready to welcome you.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://www.pawsadmin.com/api/booking/portal/bookingIndex.html?key=ZGN65QSOKA" target="_blank" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center hover:bg-[#8e66d4] transition-colors duration-300 shadow-lg">
+                       Book Boarding & Grooming Now
+                    </a>
+                    <button class="open-modal-btn px-8 py-4 rounded-full border border-lavender/30 text-white font-medium text-center hover:bg-white/10 transition-colors duration-300">
+                       Reserve Bun Interaction Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-lavender/20 pt-16 mb-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 text-white">
+                        <span class="font-serif text-2xl font-semibold tracking-tight">Cuddle Bunny</span>
+                    </a>
+                    <p class="text-sm text-cream/60 leading-relaxed">A sanctuary for wellness, impeccable animal care, and quiet reflection. Where wellness meets whiskers.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Visit Us</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li>2901 N Clark St, Chicago, IL <br> 60657, United States</li>
+                        <li><a href="tel:+17736879253" class="hover:text-white transition-colors">(773) 687 9253</a></li>
+                        <li><a href="mailto:cuddlebunnyinfo@gmail.com" class="hover:text-white transition-colors">CuddleBunnyInfo@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li class="flex justify-between"><span>Mon - Tue</span> <span>10am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Wed</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Fri - Sun</span> <span>10am - 8pm</span></li>
+                        <li class="text-xs text-lavender italic mt-2">*CLOSED DAILY 1 - 3:00pm for bunny naptime</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cuddlebunnyccc/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/cuddlebunnyccc" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-facebook-logo text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-lavender/20 pt-8 text-xs text-cream/40">
+                <p>&copy; <span id="current-year"></span> Cuddle Bunny. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cream/80 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Boarding Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal Overlay -->
+    <div id="reservation-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-plum/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="modal-backdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-cream p-8 md:p-12 rounded-[2rem] shadow-2xl w-full max-w-lg transform scale-95 opacity-0 transition-all duration-300 border border-lavender/30" id="modal-content">
+            <button id="close-modal" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white flex items-center justify-center text-plum/60 hover:text-plum hover:bg-lavender/20 transition-all shadow-sm">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mx-auto mb-4">
+                    <i class="ph-fill ph-map-pin"></i>
+                </div>
+                <h3 class="font-serif text-3xl text-plum mb-2">Select Location</h3>
+                <p class="text-plum/70 font-light">Where would you like to experience Cuddle Bunny?</p>
+            </div>
+            
+            <div class="space-y-4">
+                <a href="https://www.bookeo.com/cuddlebunnyccc" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Chicago Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Lakeview Sanctuary</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+                <a href="http://bookeo.com/CuddleBunnyToo" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Schaumburg Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Suburban Retreat</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

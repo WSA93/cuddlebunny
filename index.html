@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Bunny | Premium Rabbit Sanctuary & Relaxation Space</title>
+    
+    <link rel="icon" type="image/png" href="img/fav.jpeg">
+
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Premium Minimalist Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="conf.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="antialiased selection:bg-lavender selection:text-plum">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-cream/80 border-b border-lavender/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center relative z-20">
+            <a href="#" class="flex items-center gap-2 group">
+                <img src="img/logo_bunny.png" alt="Logo" width="80">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-purple transition-colors">Home</a>
+                <!-- <a href="#" class="hover:text-purple transition-colors">Services</a> -->
+
+                <!-- About Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">About <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="about.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About Us</a>
+                        <a href="about_environment.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Environment</a>
+                        <a href="about_the_owner.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">About The Owner</a>
+                    </div>
+                </div>
+
+                <!-- Club Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Club <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-64 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="rules.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">The Rules</a>
+                        <a href="lakeview_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Lakeview Buns</a>
+                        <a href="schaumburg_buns.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Meet Our Schaumburg Buns</a>
+                        <a href="bun_interaction_menu.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Bun Interaction Menu</a>
+                        <a href="private_events.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Private Events</a>
+                    </div>
+                </div>
+
+                <!-- Care Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Care <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="boarded_bunny_care.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarded Bunny Care</a>
+                        <a href="boarding_pricing.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Boarding Service Prices</a>
+                    </div>
+                </div>
+
+
+                <!-- Locations Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="flex items-center gap-1 hover:text-purple transition-colors">Locations <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:-rotate-180"></i></button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="lakeview_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Lakeview</a>
+                        <a href="schaumburg_location.html" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Schaumburg</a>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Call Dropdown -->
+                <div class="relative group py-4 -my-4">
+                    <button class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-purple text-white font-medium text-sm btn-primary">
+                       Call to Inquire
+                    </button>
+                    <div class="absolute top-full left-0 w-48 bg-white shadow-hover rounded-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-lavender/20">
+                        <a href="tel:+17736879253" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Lakeview</a>
+                        <a href="tel:+1708710096" class="block px-5 py-2.5 hover:text-purple hover:bg-cream/60 transition-colors">Call Schaumburg</a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-plum text-3xl p-2 -mr-2 relative z-[60]">
+                    <i class="ph ph-list transition-transform duration-300"></i>
+                </button>
+        </div>
+    </nav>
+
+    <!-- Full-Screen Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-cream/95 backdrop-blur-xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col pt-28 px-6 overflow-y-auto pb-10">
+        <div class="max-w-md mx-auto w-full space-y-8">
+            <!-- Mobile Home -->
+            <div>
+                <a href="#" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Home</a>
+            </div>
+
+            <!-- Mobile Services -->
+           <!-- <div>
+                <a href="#" class="block font-serif text-2xl text-plum border-b border-lavender/30 pb-2 hover:text-purple transition-colors">Services</a>
+            </div> -->
+
+            <!-- Mobile Locations -->
+
+            <!-- Mobile About -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">About</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="about.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About Us</a>
+                    <a href="about_environment.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Environment</a>
+                    <a href="about_the_owner.html" class="text-lg text-plum/80 hover:text-purple transition-colors">About The Owner</a>
+                </div>
+            </div>
+
+            <!-- Mobile Club -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Club</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="rules.html" class="text-lg text-plum/80 hover:text-purple transition-colors">The Rules</a>
+                    <a href="lakeview_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Lakeview Buns</a>
+                    <a href="schaumburg_buns.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Meet Our Schaumburg Buns</a>
+                    <a href="bun_interaction_menu.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Bun Interaction Menu</a>
+                    <a href="private_events.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Private Events</a>
+                </div>
+            </div>
+
+            <!-- Mobile Care -->
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Care</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="boarded_bunny_care.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarded Bunny Care</a>
+                    <a href="boarding_pricing.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Boarding Service Prices</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Locations</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="lakeview_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Chicago</a>
+                    <a href="schaumburg_location.html" class="text-lg text-plum/80 hover:text-purple transition-colors">Schaumburg</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-2xl text-plum mb-4 border-b border-lavender/30 pb-2">Call to Inquire</h3>
+                <div class="flex flex-col space-y-3 pl-2">
+                    <a href="tel:+17736879253" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Lakeview</a>
+                    <a href="tel:+1708710096" class="text-lg text-plum/80 hover:text-purple transition-colors">Call Schaumburg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2  items-center">
+            <div class="z-10 reveal">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-soft mb-8 border border-lavender/30 animate-glow">
+                    <div class="flex text-[#f59e0b] text-sm">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <span class="text-xs font-semibold tracking-wide uppercase text-plum">4.8 (132 Google Reviews)</span>
+                </div>
+                
+                <h1 class="font-serif text-5xl lg:text-7xl leading-[1.1] mb-6 tracking-tight text-plum">
+                    Find Your Calm. <br>
+                    <span class="text-purple italic">Share the Joy.</span>
+                </h1>
+                
+                <p class="text-lg lg:text-xl text-plum/80 mb-10 leading-relaxed font-light">
+                    A premium sanctuary where wellness meets whiskers. Recharge your spirit in our mindful relaxation café, or trust us with the impeccable care of your furry family in our medical-grade boarding lounge.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.pawsadmin.com/api/booking/portal/bookingIndex.html?key=ZGN65QSOKA" target="_blank" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center btn-primary flex justify-center items-center gap-2">
+                       Book Boarding & Grooming
+                    </a>
+                    <button class="open-modal-btn px-8 py-4 rounded-full border border-plum text-plum font-medium text-center btn-outline flex justify-center items-center gap-2">
+                         Reserve Bun Interaction
+                    </button>
+                </div>
+            </div>
+            
+            <div class="relative z-10 reveal reveal-delay-1 lg:h-[600px] flex items-center justify-center">
+                <!-- Decorative Elements -->
+                <div class="absolute inset-0 bg-lavender/20 rounded-full blur-3xl opacity-50 float"></div>
+                
+                <div class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700 group mt-10 lg:mt-0">
+                    <!-- Base Image -->
+                    <img src="img/hero1.jpg" alt="Serene rabbit in a sunlit space" class="absolute inset-0 object-cover w-full h-full transition-opacity duration-700">
+                    <!-- Hover Transition Image -->
+                    <img src="img/hero2.jpg" alt="Close up of a serene rabbit" class="absolute inset-0 object-cover w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-plum/40 to-transparent pointer-events-none z-10"></div>
+                </div>
+                
+                <!-- Floating Badge -->
+                <div class="absolute bottom-10 -left-0 bg-white p-4 rounded-2xl shadow-soft border border-lavender/30 float" style="animation-delay: 1s;">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cream flex items-center justify-center text-purple text-xl">
+                            <i class="ph ph-shield-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-plum/60">Boarding Standard</p>
+                            <p class="text-sm font-medium text-plum">Medical-Grade Hygiene</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Horizontal Trust Badge Ticker -->
+    <div class="bg-white py-5 relative overflow-hidden border-y border-lavender/20 shadow-[0_4px_30px_-5px_rgba(92,47,89,0.05)] z-20">
+        <!-- Gradient Fades for Smooth Edges -->
+        <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="flex animate-ticker items-center">
+            <!-- Group 1 -->
+            <div class="flex items-center shrink-0">
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-wind text-purple text-xl"></i> HEPA-filtered facility</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-corners-out text-purple text-xl"></i> Spacious, carpeted exercise pens</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-shield-check text-purple text-xl"></i> Individual care (No interaction)</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-camera text-purple text-xl"></i> Regular updates for pet parents</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-sparkle text-purple text-xl"></i> High standards of cleanliness</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-scissors text-purple text-xl"></i> Spayed & Neutered</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-first-aid-kit text-purple text-xl"></i> Bi-annually vaccinated (RHDV2)</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-users-three text-purple text-xl"></i> Community service & food drives</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-hand-heart text-purple text-xl"></i> Positive social impact</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+            </div>
+
+            <!-- Group 2 (Exact Duplicate for Infinite Scroll) -->
+            <div class="flex items-center shrink-0">
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-wind text-purple text-xl"></i> HEPA-filtered facility</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-corners-out text-purple text-xl"></i> Spacious, carpeted exercise pens</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-shield-check text-purple text-xl"></i> Individual care (No interaction)</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-camera text-purple text-xl"></i> Regular updates for pet parents</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-sparkle text-purple text-xl"></i> High standards of cleanliness</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-scissors text-purple text-xl"></i> Spayed & Neutered</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-first-aid-kit text-purple text-xl"></i> Bi-annually vaccinated (RHDV2)</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-users-three text-purple text-xl"></i> Community service & food drives</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+                
+                <div class="flex items-center gap-3 px-8 text-sm font-semibold tracking-[0.15em] uppercase text-plum/70 whitespace-nowrap"><i class="ph ph-hand-heart text-purple text-xl"></i> Positive social impact</div>
+                <i class="ph-fill ph-star-four text-lavender/50 text-xs mx-3"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Philosophy -->
+    <section id="philosophy" class="py-24 px-6 relative overflow-hidden">
+        <!-- Decorative bg elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-lavender/20 rounded-full blur-3xl opacity-40 translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple/10 rounded-full blur-3xl opacity-40 -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="text-center lg:text-left reveal">
+                <i class="ph-fill ph-heart text-5xl text-purple mb-6 inline-block float"></i>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-8 text-plum leading-tight">Sanctuary First. <br><span class="italic text-purple">Business Second.</span></h2>
+                
+                <div class="prose prose-lg mx-auto lg:mx-0 text-plum/80 leading-relaxed space-y-6 font-light">
+                    <p>
+                        Cuddle Bunny is a one-of-a-kind space where people can slow down, connect, and experience the gentle joy of being around rabbits. Whether you’re visiting for a calming daytime escape or a cozy weekend activity, our goal is simple: help you relax, recharge, and feel good.
+                    </p>
+                    <p>
+                        We combine animal interaction with wellness and creativity. From bunny yoga and meditation to art nights, crafting, and quiet reading sessions, every experience is designed to nurture your mind, body, and spirit in a warm, welcoming environment.
+                    </p>
+                    <p>
+                        At the heart of Cuddle Bunny are our rescued rabbits, each one deeply loved, carefully cared for, and an important part of our family. Their wellbeing is our highest priority, and we’ve built our space and practices around ensuring their comfort and safety.
+                    </p>
+
+                    <p>
+                        Beyond our studio, we’re committed to making a positive impact through community service, education, and meaningful partnerships. Whether it’s creating moments of comfort, encouraging responsible pet care, or bringing people together, we believe small, gentle experiences can make a big difference.
+                    </p>
+
+                    <p>
+                        <b>
+                            Come for the bunnies. Stay for the peace, connection, and joy.
+                        </b>
+                    </p>
+                </div>
+                
+                <div class="mt-12 pt-12 border-t border-lavender/30 flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <i class="ph ph-first-aid-kit text-3xl text-purple"></i>
+                        <div class="text-left">
+                            <p class="font-semibold text-plum">100% Vaccinated</p>
+                            <p class="text-xs text-plum/60 uppercase tracking-wide">RHDV2 Protected</p>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block w-px h-10 bg-lavender/30"></div>
+                    <div class="flex items-center gap-3">
+                        <i class="ph ph-hands-clapping text-3xl text-purple"></i>
+                        <div class="text-left">
+                            <p class="font-semibold text-plum">Rescue Partners</p>
+                            <p class="text-xs text-plum/60 uppercase tracking-wide">Community Driven</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column Image -->
+            <div class="reveal reveal-delay-1 relative lg:h-full flex items-center justify-center">
+                <div class="absolute inset-0 bg-lavender/30 rounded-[2.5rem] transform -translate-x-4 translate-y-4"></div>
+                <img src="img/about.jpg" alt="Animal lover with a pet" class="relative z-10 w-full aspect-[4/5] object-cover rounded-[2.5rem] shadow-hover border border-lavender/20 transition-transform duration-500 hover:scale-[1.02]">
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Core Services Section -->
+    <section id="services" class="py-24 px-6 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <span class="text-purple font-semibold tracking-widest uppercase text-sm mb-3 block">Our Core Offerings</span>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-4 text-plum">Sanctuaries of Comfort & Care</h2>
+                <p class="text-plum/70 max-w-2xl mx-auto text-lg">Designed meticulously to provide peace for our human guests and uncompromising, pristine care for our rabbit residents.</p>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Service 1: Cafe -->
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ">
+                    <div class="order-2 lg:order-1 reveal reveal-delay-1">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-purple/10 text-purple mb-6 shadow-sm">
+                            <i class="ph-fill ph-coffee text-3xl"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl lg:text-4xl mb-4 text-plum leading-tight">Rabbit Café & Relaxation Space</h3>
+                        <p class="text-plum/80 text-lg leading-relaxed mb-8 font-light">
+                            Provides a comfortable, tranquil space for visitors to interact with our domesticated rescue rabbits. Experience profound stress relief and a natural boost in happiness, <strong>serotonin, and oxytocin</strong> simply by sharing space with these gentle creatures.
+                        </p>
+                        <div class="flex items-center gap-4 bg-cream p-4 rounded-2xl border border-lavender/30 shadow-sm mb-8">
+                            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-purple shrink-0 shadow-sm">
+                                <i class="ph-fill ph-clock text-xl"></i>
+                            </div>
+                            <span class="text-plum/90 font-medium text-sm leading-snug">Available for daytime visits & weekend evening activities.</span>
+                        </div>
+                        <div>
+                            <a href="bun_interaction_menu.html" class="inline-flex items-center gap-2 font-medium text-purple hover:text-plum transition-colors group">
+                                View Interaction Menu <i class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 relative reveal reveal-delay-2">
+                        <div class="absolute inset-0 bg-lavender/30 rounded-[2.5rem] transform translate-x-4 translate-y-4"></div>
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800" alt="Relaxation cafe space" class="relative z-10 w-full aspect-[4/3] object-cover rounded-[2.5rem] shadow-hover border border-lavender/20 hover:rotate-2 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Service 2: Boarding -->
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="relative reveal reveal-delay-1">
+                        <div class="absolute inset-0 bg-purple/10 rounded-[2.5rem] transform -translate-x-4 translate-y-4"></div>
+                        <img src="https://images.unsplash.com/photo-1591561582301-7ce6588cc286?auto=format&fit=crop&q=80&w=800" alt="Pristine rabbit boarding" class="relative z-10 w-full aspect-[4/3] object-cover rounded-[2.5rem] shadow-hover border border-lavender/20  hover:rotate-2 transition-transform duration-500">
+                    </div>
+                    <div class="reveal reveal-delay-2">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-purple/10 text-purple mb-6 shadow-sm">
+                            <i class="ph-fill ph-house-line text-3xl"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl lg:text-4xl mb-4 text-plum leading-tight">Rabbit Boarding Services</h3>
+                        <p class="text-plum/80 text-lg leading-relaxed mb-8 font-light">
+                            We provide limited, high-quality boarding for rabbits requiring short or extended stays. Leave with absolute peace of mind knowing your furry family member is receiving unparalleled, individualized care.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-8 text-sm font-medium text-plum/90">
+                            <li class="flex items-start gap-3 group">
+                                <div class="mt-0.5 w-6 h-6 rounded-full bg-cream flex items-center justify-center text-purple shrink-0 border border-lavender/30 group-hover:bg-purple group-hover:text-white transition-colors"><i class="ph-bold ph-wind"></i></div>
+                                <span class="mt-1"><strong>HEPA-filtered facility</strong> ensuring optimal air quality</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <div class="mt-0.5 w-6 h-6 rounded-full bg-cream flex items-center justify-center text-purple shrink-0 border border-lavender/30 group-hover:bg-purple group-hover:text-white transition-colors"><i class="ph-bold ph-corners-out"></i></div>
+                                <span class="mt-1"><strong>Spacious, carpeted exercise pens</strong> for ultimate comfort</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <div class="mt-0.5 w-6 h-6 rounded-full bg-cream flex items-center justify-center text-purple shrink-0 border border-lavender/30 group-hover:bg-purple group-hover:text-white transition-colors"><i class="ph-bold ph-prohibit"></i></div>
+                                <span class="mt-1"><strong>Individual care</strong> with no interaction between boarded guests</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <div class="mt-0.5 w-6 h-6 rounded-full bg-cream flex items-center justify-center text-purple shrink-0 border border-lavender/30 group-hover:bg-purple group-hover:text-white transition-colors"><i class="ph-bold ph-camera"></i></div>
+                                <span class="mt-1"><strong>Regular updates</strong> for pet parents to stay connected</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <div class="mt-0.5 w-6 h-6 rounded-full bg-cream flex items-center justify-center text-purple shrink-0 border border-lavender/30 group-hover:bg-purple group-hover:text-white transition-colors"><i class="ph-bold ph-sparkle"></i></div>
+                                <span class="mt-1"><strong>High standards of cleanliness</strong> maintained at all times</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="boarding_pricing.html" class="inline-flex items-center gap-2 font-medium text-purple hover:text-plum transition-colors group">
+                                View Boarding Options & Pricing <i class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Pillars (Wellness, Community, Rescue, Retail) -->
+    <section id="pillars" class="py-24 px-6 bg-cream/30 border-t border-b border-lavender/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="text-purple font-semibold tracking-widest uppercase text-sm mb-3 block">More Than A Sanctuary</span>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-4 text-plum">The Cuddle Bunny Pillars</h2>
+                <p class="text-plum/70 max-w-2xl mx-auto text-lg">A holistic approach to wellness, community connection, and uncompromising animal welfare.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 1. Wellness & Holistic -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700">
+                   <div class="w-14 h-14 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mb-6">
+                       <i class="ph-fill ph-flower-lotus"></i>
+                   </div>
+                   <h3 class="font-serif text-2xl text-plum mb-4">1. Wellness & Holistic Activities</h3>
+                   <p class="text-plum/80 leading-relaxed mb-6 font-light">
+                       We offer activities that nurture the body, mind, and spirit. <span class="font-medium text-purple">Evening sessions typically run 6–8 p.m. on weekends.</span>
+                   </p>
+                   <ul class="space-y-3 text-sm text-plum/90">
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Bunny yoga & meditation</span></li>
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Sketching, knitting, and crocheting</span></li>
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Book reading, poetry & creative writing</span></li>
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Crafting, tie-dye, and neon blacklight painting</span></li>
+                   </ul>
+                </div>
+
+                <!-- 2. Community Engagement -->
+                <div class="bg-purple rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/30 reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 flex flex-col">
+                   <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-3xl mb-6 shadow-sm border border-lavender/20">
+                       <i class="ph-fill ph-users-three"></i>
+                   </div>
+                   <h3 class="font-serif text-2xl text-plum mb-4 text-white">2. Community Engagement</h3>
+                   <p class="text-white leading-relaxed font-light flex-grow">
+                       We believe in creating a positive social impact far beyond our sanctuary doors. We proudly host community service events like food drives and coordinate volunteering efforts to support the food-insecure. By working hand-in-hand with local organizations, we strive to uplift our neighborhood and build a stronger, more compassionate community.
+                   </p>
+                </div>
+
+                <!-- 3. Animal Rescue & Care -->
+                <div class="bg-plum text-cream rounded-[2rem] p-8 lg:p-10 shadow-soft reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700 relative overflow-hidden">
+                   <div class="absolute right-0 bottom-0 opacity-10 transform translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+                       <i class="ph-fill ph-heart text-[12rem] text-lavender"></i>
+                   </div>
+                   <div class="relative z-10">
+                       <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white text-3xl mb-6">
+                           <i class="ph-fill ph-first-aid-kit"></i>
+                       </div>
+                       <h3 class="font-serif text-2xl mb-4 text-white">3. Animal Rescue & Care</h3>
+                       <p class="text-cream/90 leading-relaxed mb-6 font-light">
+                           We focus on high-quality, loving care for all resident rabbits, rescuing most of our bunnies from difficult situations or surrendered homes.
+                       </p>
+                       <ul class="space-y-3 text-sm text-cream/90">
+                           <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-lavender text-lg -mt-1"></i> <span>All resident bunnies are spayed/neutered</span></li>
+                           <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-lavender text-lg -mt-1"></i> <span>Bi-annually vaccinated (RHDV2)</span></li>
+                           <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-lavender text-lg -mt-1"></i> <span class="bg-white/20 px-2 py-0.5 rounded font-medium">Not available for adoption or sale</span></li>
+                       </ul>
+                   </div>
+                </div>
+
+                <!-- 4. Retail -->
+                <div class="bg-white rounded-[2rem] p-8 lg:p-10 shadow-soft border border-lavender/20 reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700">
+                   <div class="w-14 h-14 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mb-6">
+                       <i class="ph-fill ph-tote"></i>
+                   </div>
+                   <h3 class="font-serif text-2xl text-plum mb-4">4. Retail</h3>
+                   <p class="text-plum/80 leading-relaxed mb-6 font-light">
+                       Take a piece of The Cuddle Bunny with you. Our boutique retail space sells a curated selection of premium bunny-themed products.
+                   </p>
+                   <ul class="space-y-3 text-sm text-plum/90">
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Exclusive apparel, jewelry, and accessories</span></li>
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Stickers, buttons, and enamel pins</span></li>
+                       <li class="flex items-start gap-3"><i class="ph-fill ph-check-circle text-purple text-lg -mt-1"></i> <span>Artisan mugs and soft plush toys</span></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery / Scrollytelling Visuals -->
+    <section id="gallery" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-serif text-4xl lg:text-5xl mb-4 text-plum">Glimpses of Tranquility</h2>
+                <p class="text-plum/70 max-w-2xl mx-auto text-lg">A visual journey through our sanctuary.</p>
+            </div>
+
+            <div class="masonry reveal">
+                <!-- Gallery Item 1 -->
+                <a href="https://maps.app.goo.gl/YREAAUiuTPYHhaaq7" target="_blank" class="masonry-item block group">
+                    <img src="img/1.jpg" alt="Cozy cafe corner">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Will Hayes</span>
+                    </div>
+                </a>
+                <!-- Gallery Item 2 -->
+                <a href="https://maps.app.goo.gl/vJvjQz71p51aZ7yc6" target="_blank" class="masonry-item block group">
+                    <img src="img/2.jpg" alt="Close up of a rabbit">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Helen Low</span>
+                    </div>
+                </a>
+                <!-- Gallery Item 3 -->
+                <a href="https://maps.app.goo.gl/LWgaTJoj88Lm4MkD8" target="_blank" class="masonry-item block group">
+                    <img src="img/3.jpg" alt="Clean boarding facility concept">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Liz Parisi</span>
+                    </div>
+                </a>
+                 <!-- Gallery Item 4 -->
+                 <a href="https://maps.app.goo.gl/BBJTtmSstR5pJeok7" target="_blank" class="masonry-item block group">
+                    <img src="img/4.jpg" alt="Yoga session">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Helen Low</span>
+                    </div>
+                </a>
+                <!-- Gallery Item 5 -->
+                <a href="https://maps.app.goo.gl/o3ybFSQcBCnzHgDw9" target="_blank" class="masonry-item block group">
+                    <img src="img/5.jpg" alt="Coffee and pastry">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Cassandra Carstens</span>
+                    </div>
+                </a>
+                <!-- Gallery Item 6 -->
+                <a href="https://maps.app.goo.gl/65qgehU3dmME14GE8" target="_blank" class="masonry-item block group">
+                    <img src="img/6.jpg" alt="Coffee and pastry">
+                    <div class="masonry-overlay flex items-end p-6">
+                        <span class="text-white font-medium tracking-wide">Patrick Tomaszek</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-6 bg-cream border-t border-b border-lavender/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <p class="text-purple font-semibold tracking-widest uppercase text-sm mb-3">Words of Affirmation</p>
+                <h2 class="font-serif text-4xl lg:text-5xl text-plum">Trusted by Discerning Guests</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <a href="https://maps.app.goo.gl/vUUBi4kvqEKggudr7" target="_blank" class="block bg-white p-8 rounded-3xl shadow-soft reveal group hover:-translate-y-2 hover:shadow-hover transition-all duration-700">
+                    <div class="flex text-[#f59e0b] text-sm mb-6">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-plum/80 leading-relaxed mb-6 font-light italic">"Small but cute place. Bunnies are adorable and you can easily pet them. They give you treats for each pen of bunnies which is a nice touch."</p>
+                    <div>
+                          <p class="text-sm font-semibold text-plum">Lisa</p>
+                          <p class="text-xs text-plum/50">Bunny Interaction Guest</p>
+                     </div>
+                </a>
+
+                <!-- Review 2 -->
+                <a href="https://maps.app.goo.gl/7LYNGJd9KHLVmJAP8" target="_blank" class="block bg-white p-8 rounded-3xl shadow-soft reveal reveal-delay-1 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700">
+                    <div class="flex text-[#f59e0b] text-sm mb-6">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-plum/80 leading-relaxed mb-6 font-light italic">"Wonderful experience, very kind and welcoming staff. The bunnies are very friendly and you get more than enough time with each of them."</p>
+                    <div>
+                          <p class="text-sm font-semibold text-plum">Ery Nightingale</p>
+                          <p class="text-xs text-plum/50">Bunny Interaction Client</p>
+                    </div>
+                </a>
+
+                <!-- Review 3 -->
+                <a href="https://maps.app.goo.gl/B6DXF1zL974AJ5Kd6" target="_blank" class="block bg-white p-8 rounded-3xl shadow-soft reveal reveal-delay-2 group hover:-translate-y-2 hover:shadow-hover transition-all duration-700">
+                    <div class="flex text-[#f59e0b] text-sm mb-6">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-plum/80 leading-relaxed mb-6 font-light italic">"I found out about this place by social media and had to bring my daughter, she had fun and loved the bunnies. Very relaxing will highly recommend"</p>
+                     <div>
+                          <p class="text-sm font-semibold text-plum">Alma Pulido</p>
+                          <p class="text-xs text-plum/50">Bunny Interaction Guest</p>
+                     </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA / Footer -->
+    <footer class="bg-plum pt-24 pb-12 px-6 text-cream relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, #faf7f2 0%, transparent 50%);"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- CTA Area -->
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="font-serif text-4xl lg:text-6xl mb-6 text-white tracking-tight">Ready to Step Into Peace?</h2>
+                <p class="text-cream/70 text-lg mb-10">Whether you seek an afternoon of quiet connection or the finest care for your companion, we are ready to welcome you.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://www.pawsadmin.com/api/booking/portal/bookingIndex.html?key=ZGN65QSOKA" target="_blank" class="px-8 py-4 rounded-full bg-purple text-white font-medium text-center hover:bg-[#8e66d4] transition-colors duration-300 shadow-lg">
+                       Book Boarding & Grooming Now
+                    </a>
+                    <button class="open-modal-btn px-8 py-4 rounded-full border border-lavender/30 text-white font-medium text-center hover:bg-white/10 transition-colors duration-300">
+                       Reserve Bun Interaction Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-lavender/20 pt-16 mb-12">
+                <div class="md:col-span-1">
+                    <a href="#" class="flex items-center gap-2 mb-6 text-white">
+                        <span class="font-serif text-2xl font-semibold tracking-tight">Cuddle Bunny</span>
+                    </a>
+                    <p class="text-sm text-cream/60 leading-relaxed">A sanctuary for wellness, impeccable animal care, and quiet reflection. Where wellness meets whiskers.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Visit Us</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li>2901 N Clark St, Chicago, IL <br> 60657, United States</li>
+                        <li><a href="tel:+17736879253" class="hover:text-white transition-colors">(773) 687 9253</a></li>
+                        <li><a href="mailto:cuddlebunnyinfo@gmail.com" class="hover:text-white transition-colors">CuddleBunnyInfo@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm text-cream/80">
+                        <li class="flex justify-between"><span>Mon - Tue</span> <span>10am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Wed</span> <span>Closed</span></li>
+                        <li class="flex justify-between"><span>Fri - Sun</span> <span>10am - 8pm</span></li>
+                        <li class="text-xs text-lavender italic mt-2">*CLOSED DAILY 1 - 3:00pm for bunny naptime</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider text-xs text-lavender mb-6">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cuddlebunnyccc/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/cuddlebunnyccc" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-purple transition-colors">
+                            <i class="ph-fill ph-facebook-logo text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-lavender/20 pt-8 text-xs text-cream/40">
+                <p>&copy; <span id="current-year"></span> Cuddle Bunny. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cream/80 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cream/80 transition-colors">Boarding Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal Overlay -->
+    <div id="reservation-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-plum/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="modal-backdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-cream p-8 md:p-12 rounded-[2rem] shadow-2xl w-full max-w-lg transform scale-95 opacity-0 transition-all duration-300 border border-lavender/30" id="modal-content">
+            <button id="close-modal" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white flex items-center justify-center text-plum/60 hover:text-plum hover:bg-lavender/20 transition-all shadow-sm">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 rounded-full bg-purple/10 flex items-center justify-center text-purple text-3xl mx-auto mb-4">
+                    <i class="ph-fill ph-map-pin"></i>
+                </div>
+                <h3 class="font-serif text-3xl text-plum mb-2">Select Location</h3>
+                <p class="text-plum/70 font-light">Where would you like to experience Cuddle Bunny?</p>
+            </div>
+            
+            <div class="space-y-4">
+                <a href="https://www.bookeo.com/cuddlebunnyccc" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Chicago Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Lakeview Sanctuary</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+                <a href="http://bookeo.com/CuddleBunnyToo" target="_blank" class="modal-location-link block w-full p-6 rounded-2xl border-2 border-lavender/30 hover:border-purple bg-white hover:bg-purple/5 transition-all text-center group relative overflow-hidden">
+                    <span class="block font-serif text-2xl text-plum group-hover:text-purple mb-1 relative z-10 transition-colors">Schaumburg Reservation</span>
+                    <span class="text-sm uppercase tracking-wider text-plum/50 relative z-10">Suburban Retreat</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple/5 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
